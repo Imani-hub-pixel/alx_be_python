@@ -14,6 +14,4 @@ match priority:
 
 if time_bound == "yes":
     reminder += " This task requires immediate attention today!"
-
 print(reminder)
-gi
