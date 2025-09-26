@@ -9,11 +9,13 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        try:
-            choice = int(input("Enter your choice: "))
-        except ValueError:
+        choice_input = input("Enter your choice: ")
+        if not choice_input.isdigit():
             print("Invalid input. Please enter a number (1–4).")
-            continue 
+            continue
+
+        # Convert to int safely now
+        choice = int(choice_input)
 
         if choice == 1:
             item=input("Enter the item to add:")
