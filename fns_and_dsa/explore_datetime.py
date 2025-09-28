@@ -7,8 +7,8 @@ current_days=int(input("Enter number of days to add to the current date: "))
 def calculate_future_date(curret_days):
     future_date=datetime.now()+timedelta(days=curret_days)
     print(f"Future date: {future_date.year}-{future_date.month}-{future_date.day} ")
-def main():
+"""def main():
     display_current_datetime()
     calculate_future_date(current_days) 
 if __name__=="__main__":
-    main()
+    main()"""
