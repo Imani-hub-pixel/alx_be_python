@@ -12,12 +12,19 @@ class Book:
         return False    
 class Library():
     def __init__(self):
-        self._books=[]
-    def add_book(self,title):
+        self._books = []   # protected attribute (assignment wants this exact line)
+
+    def add_book(self, title):
         self._books.append(title)
-    def check_out_book(self,title):
+
+    def check_out_book(self, title):
+        if title in self._books:
+            self._books.remove(title)
+            return True
+        return False
+
+    def return_book(self, title):
         self._books.append(title)
-    def return_book(self,title):
-        self._books.append(title)
+
     def list_available_books(self):
         return self._books
