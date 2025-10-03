@@ -10,6 +10,7 @@ def safe_divide(numerator,denominator):
         
         except ZeroDivisionError:
             print("Error: Cannot divide by zero.")
+            return None
 
     
     except ValueError:
