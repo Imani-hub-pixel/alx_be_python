@@ -11,7 +11,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["display"]
+            "args": ["10","5"]
         }
     ]
 }
