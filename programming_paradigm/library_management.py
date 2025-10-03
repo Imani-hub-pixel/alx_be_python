@@ -9,16 +9,15 @@ class Book:
         if not self.is_checked_out:
             self.is_checked_out = True
             return True   # checkout successful
-        return False  
-        
-class Library(Book):
+        return False    
+class Library():
     def __init__(self):
-        self.__books=[]
+        self._books=[]
     def add_book(self,title):
-        self.__books.append(title)
+        self._books.append(title)
     def check_out_book(self,title):
-        self.__books.append(title)
+        self._books.append(title)
     def return_book(self,title):
-        self.__books.append(title)
+        self._books.append(title)
     def list_available_books(self):
-        return self.__books
+        return self._books
