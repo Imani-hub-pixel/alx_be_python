@@ -3,7 +3,7 @@ def safe_divide(numerator,denominator):
         numerator=float(numerator)
         denominator=float(denominator)
     except ValueError:
-        print("Error: Please enter numeric values only")
+        print("Error: Please enter numeric values only.")
     try:
         result=numerator/denominator
         
