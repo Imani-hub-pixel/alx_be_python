@@ -4,7 +4,7 @@ from simple_calculator import SimpleCalculator
 class TestCalculator:
     def setUp(self):
         self.calc = SimpleCalculator()
-    def test_add_positive(self):
+    def test_addition(self):
         result=self.calc.add(4,3)
         self.assertEqual(result,7)
     def test_add_negative(self):
@@ -16,7 +16,7 @@ class TestCalculator:
     def test_subtract_negative_result(self):
         result=self.calc.subtract(-7,-4)
         self.assertEqual(result,-11)
-    def test_subtract_positive(self):
+    def test_subtraction(self):
         result=self.calc.subtract(4,2)
         self.assertEqual(result,2)
     def test_subtract_negative(self):
