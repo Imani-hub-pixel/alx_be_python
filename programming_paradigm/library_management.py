@@ -4,7 +4,7 @@ class Book:
         self.author=author
         self.___is_checked_out=_is_checked_out
         
-class Library:
+class Library(Book):
     def __init__(self):
         self.___books=[]
     def add_book(self,title):
