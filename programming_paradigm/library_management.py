@@ -3,9 +3,9 @@ class Book:
         self.title=title
         self.author=author
         self.___is_checked_out=_is_checked_out
-    def check_out_book(self,title):
+    def check_out_book(self):
         return self.___is_checked_out
-    def return_book(self,title):
+    def return_book(self):
         return not self.___is_checked_out
 
         
