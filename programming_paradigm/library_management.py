@@ -12,7 +12,7 @@ class Book:
         return False    
 class Library():
     def __init__(self):
-        self._books = []   # protected attribute (assignment wants this exact line)
+        self._books = []   # protected attribute 
 
     def add_book(self, title):
         self._books.append(title)
