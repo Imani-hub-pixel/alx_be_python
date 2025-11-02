@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-cco$u-t@7c7(zq(mtd1&3g2$mn3^)^0(vfs8maj$a(mdshf4t%"
+SECRET_KEY = "django-insecure-utcy+nei$7znb($st+vu0(u97whco1%s0&mco*4rzyf0(n&a$#"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'book_store.apps.BookStoreConfig'
+    "book_store.apps.BookStoreConfig",
 ]
 
 MIDDLEWARE = [
@@ -74,13 +74,13 @@ WSGI_APPLICATION = "django_demo.wsgi.application"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'alx_book_store',
-        'USER': 'root',
-        'PASSWORD': 'Faith@2025',
-        'HOST': 'localhost',
-        'PORT': '3306',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "Book_store",
+        "USER":"root",
+        "PASSWORD":"Faith@2025",
+        "Host":"localhost",
+        "Port":"3306"
     }
 }
 
